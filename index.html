@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>photo strip</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Allura&family=Parisienne&family=Alex+Brush&family=Sacramento&family=Dancing+Script&family=Satisfy&family=Homemade+Apple&family=La+Belle+Aurore&family=Nothing+You+Could+Do&family=Caveat&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--
+  Decorations come from the  elements/  folder.
+  Each one is a single <img class="o"> line. Move/resize it with:
+    --x / --y = position, --s = size, --r = rotation
+-->
+
+<main class="page">
+
+  <header class="hero">
+    <img class="o" src="elements/flower%20-%201.svg" alt="" style="--x:30%;--y:20%;--s:46px;--r:-10deg">
+    <img class="o" src="elements/flower%20-%205.svg" alt="" style="--x:68%;--y:62%;--s:40px;--r:12deg">
+    <h1 class="script glow">I love you baby</h1>
+  </header>
+
+  <!-- =====================================================
+       ONE LONG STRIP: 5 PHOTOS, THEN THE NOTE ON THE SAME BACKGROUND
+       Put your edited photos in the  images/  folder named:
+       1.jpg, 2.jpg ... 5.jpg   (change .jpg below if needed)
+       ===================================================== -->
+  <section class="strip" aria-label="photo strip">
+
+    <!-- flower borders (left turned 90° left, right turned 90° right) -->
+    <div class="rail rail-left" aria-hidden="true"></div>
+    <div class="rail rail-right" aria-hidden="true"></div>
+
+    <!-- 1 -->
+    <figure class="frame">
+      <div class="photo"><img src="images/1.heic" alt="photo 1" onerror="this.remove()"></div>
+      <img class="o" src="elements/flower%20-%201.svg" alt="" style="--x:3%;--y:4%;--s:58px;--r:-8deg">
+      <img class="o" src="elements/line%20decor%20-%201.svg" alt="" style="--x:80%;--y:4%;--s:70px;--r:0deg">
+      <img class="o" src="elements/flower%20-%203.svg" alt="" style="--x:90%;--y:34%;--s:34px;--r:0deg">
+      <img class="o" src="elements/leaf%20-%202.svg" alt="" style="--x:12%;--y:56%;--s:34px;--r:0deg">
+      <img class="o" src="elements/flower%20-%202.svg" alt="" style="--x:44%;--y:74%;--s:50px;--r:0deg">
+    </figure>
+
+    <!-- 2 -->
+    <figure class="frame">
+      <div class="photo"><img src="images/2.png" alt="photo 2" onerror="this.remove()"></div>
+      <img class="o" src="elements/flower%20-%204.svg" alt="" style="--x:22%;--y:14%;--s:54px;--r:0deg">
+      <img class="o" src="elements/flower%20-%205.svg" alt="" style="--x:86%;--y:60%;--s:54px;--r:8deg">
+      <img class="o" src="elements/leaf%20-%201.svg" alt="" style="--x:4%;--y:46%;--s:46px;--r:-6deg">
+      <img class="o" src="elements/flower%20-%203.svg" alt="" style="--x:74%;--y:8%;--s:26px;--r:0deg">
+      <img class="o" src="elements/flower%20-%202.svg" alt="" style="--x:50%;--y:78%;--s:28px;--r:0deg">
+    </figure>
+
+    <!-- 3 -->
+    <figure class="frame">
+      <div class="photo"><img src="images/3.heic" alt="photo 3" onerror="this.remove()"></div>
+      <img class="o" src="elements/flower%20-%202.svg" alt="" style="--x:8%;--y:58%;--s:62px;--r:0deg">
+      <img class="o" src="elements/flower%20-%201.svg" alt="" style="--x:40%;--y:66%;--s:56px;--r:-12deg">
+      <img class="o" src="elements/flower%20-%204.svg" alt="" style="--x:86%;--y:62%;--s:46px;--r:0deg">
+      <img class="o" src="elements/flower%20-%203.svg" alt="" style="--x:92%;--y:6%;--s:28px;--r:0deg">
+      <img class="o" src="elements/line%20decor%20-%202.svg" alt="" style="--x:3%;--y:4%;--s:70px;--r:0deg">
+    </figure>
+
+    <!-- 4 -->
+    <figure class="frame">
+      <div class="photo"><img src="images/4.jpg" alt="photo 4" onerror="this.remove()"></div>
+      <img class="o" src="elements/leaf%20-%202.svg" alt="" style="--x:2%;--y:6%;--s:36px;--r:0deg">
+      <img class="o" src="elements/flower%20-%205.svg" alt="" style="--x:80%;--y:4%;--s:58px;--r:10deg">
+      <img class="o" src="elements/flower%20-%203.svg" alt="" style="--x:92%;--y:46%;--s:26px;--r:0deg">
+      <img class="o" src="elements/leaf%20-%201.svg" alt="" style="--x:62%;--y:62%;--s:56px;--r:0deg">
+      <img class="o" src="elements/flower%20-%204.svg" alt="" style="--x:30%;--y:80%;--s:30px;--r:0deg">
+    </figure>
+
+    <!-- 5 -->
+    <figure class="frame">
+      <div class="photo"><img src="images/5.heic" alt="photo 5" onerror="this.remove()"></div>
+      <img class="o" src="elements/flower%20-%201.svg" alt="" style="--x:4%;--y:10%;--s:50px;--r:0deg">
+      <img class="o" src="elements/line%20decor%20-%203.svg" alt="" style="--x:80%;--y:10%;--s:70px;--r:0deg">
+      <img class="o" src="elements/flower%20-%203.svg" alt="" style="--x:46%;--y:4%;--s:26px;--r:0deg">
+      <img class="o" src="elements/leaf%20-%202.svg" alt="" style="--x:88%;--y:66%;--s:40px;--r:0deg">
+      <img class="o" src="elements/flower%20-%205.svg" alt="" style="--x:5%;--y:68%;--s:46px;--r:0deg">
+      <p class="signature script">with love, always</p>
+    </figure>
+
+    <!-- =====================================================
+         THE NOTE (~200 words): same strip, same background.
+         Replace the text below with yours.
+         ===================================================== -->
+    <section class="note" aria-label="note">
+      <img class="o" src="elements/flower%20-%201.svg" alt="" style="--x:4%;--y:2%;--s:50px;--r:-10deg">
+      <img class="o" src="elements/flower%20-%205.svg" alt="" style="--x:88%;--y:0%;--s:44px;--r:0deg">
+      <img class="o" src="elements/flower%20-%203.svg" alt="" style="--x:94%;--y:92%;--s:30px;--r:0deg">
+      <img class="o" src="elements/leaf%20-%201.svg" alt="" style="--x:2%;--y:84%;--s:48px;--r:0deg">
+
+      <p class="paragraph">
+        I know that things have been really hard and difficult for you for a while now, and I know that I haven’t been there for you like you want me to. And I was hoping that this does a better job and showing you how much I love you. I want to be someone you can always rely on. I’ll be on your side and I’ll always be with you no matter what. We’re soooo cute <br>together and it always sucks so much when we’re fighting or things get bad between us. I really miss you and I love you so muchh.
+      </p>
+    </section>
+
+  </section>
+
+</main>
+
+<!-- =====================================================
+     BACKGROUND SONG (no visible player)
+     Put your file at  music/song.mp3  (or change the name below).
+     ===================================================== -->
+<audio id="bgm" src="music/song.mp3" loop preload="auto" autoplay></audio>
+
+<script>
+  // ---- flower borders: fill both side columns to the strip's height ----
+  const FLOWER = 'elements/flower%20-%203.svg';   // change this to use a different flower
+  function fillRails() {
+    const cs = getComputedStyle(document.documentElement);
+    const step = parseFloat(cs.getPropertyValue('--flower')) + parseFloat(cs.getPropertyValue('--gap'));
+    document.querySelectorAll('.rail').forEach(rail => {
+      const count = Math.floor(rail.clientHeight / step);
+      rail.innerHTML = '';
+      for (let i = 0; i < count; i++) {
+        const img = document.createElement('img');
+        img.src = FLOWER;
+        img.alt = '';
+        rail.appendChild(img);
+      }
+    });
+  }
+  window.addEventListener('load', fillRails);
+  window.addEventListener('resize', fillRails);
+
+  // ---- background song ----
+  // Browsers block sound until the visitor interacts with the page, so the
+  // song starts on load if allowed, otherwise on the first click / tap / key press.
+  const bgm = document.getElementById('bgm');
+  bgm.volume = 0.6;                                // 0 (silent) to 1 (full)
+  bgm.play().catch(() => {
+    const start = () => {
+      bgm.play().catch(() => {});
+      ['pointerdown', 'keydown', 'touchend', 'click'].forEach(e => window.removeEventListener(e, start));
+    };
+    ['pointerdown', 'keydown', 'touchend', 'click'].forEach(e => window.addEventListener(e, start));
+  });
+</script>
+</body>
+</html>
